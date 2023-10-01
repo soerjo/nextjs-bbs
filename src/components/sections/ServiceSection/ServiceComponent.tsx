@@ -20,7 +20,7 @@ const ServiceComponent = ({ flip, imagesrc, title, content }: IServiceComponent)
                     width={350}
                     height={350}
                     layout="responsive"
-
+                // className="bg-hero-pattern-01"
                 />
                 <Image
                     src={imagesrc}
@@ -28,7 +28,7 @@ const ServiceComponent = ({ flip, imagesrc, title, content }: IServiceComponent)
                     width={350}
                     height={350}
                     layout="responsive"
-                    className="absolute opacity-20 scale-150 -z-10 blur-xl bg-gradient-radial translate-x-10"
+                    className={flip ? "absolute opacity-[20%] scale-[250%] -z-10 translate-x-20 gradient-radius" : "absolute opacity-[20%] scale-[250%] -z-10 -translate-x-20 gradient-radius"}
                 />
             </div>
             <div className="w-full md:w-4/6">
