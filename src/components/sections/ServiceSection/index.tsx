@@ -9,7 +9,7 @@ const ServiceSection = () => {
         <SectionComp id="service" classname="">
             < Background />
 
-            <div className="flex flex-col  max-w-4xl container mx-auto h-full gap-12 px-8 md:px-0 py-0 md:py-24 ">
+            <div className="flex flex-col  max-w-4xl container mx-auto h-full gap-12 px-8 md:px-4 py-0 md:py-24 ">
                 <div>
                     <div className="h-[3px] w-1/6 bg-white mx-auto mb-8" />
                     <h2>OUR SERVICES</h2>

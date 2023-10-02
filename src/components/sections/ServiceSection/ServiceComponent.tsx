@@ -13,7 +13,7 @@ const ServiceComponent = ({ flip, imagesrc, title, content }: IServiceComponent)
     return (
         <div className={flip ? "flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-16 w-full text-right" : "flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 w-full text-right"}>
             <div className="relative flex justify-center items-center w-full  md:w-2/6 ">
-                <div className="border-[3px] border-white w-[300px] h-[300px] rounded-full absolute" />
+                <div className="border-[3px] border-white w-[300px] h-[300px] rounded-full hidden md:flex absolute" />
                 <Image
                     src={imagesrc}
                     alt="service"
