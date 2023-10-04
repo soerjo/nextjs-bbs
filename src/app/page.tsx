@@ -5,7 +5,6 @@ import SectionHome from '@/components/sections/HomeSection'
 import PeopleSection from '@/components/sections/PeopleSection'
 import SectionContact from '@/components/sections/SectionContact'
 import ServiceSection from '@/components/sections/ServiceSection'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -16,8 +15,8 @@ export default function Home() {
         <PeopleSection />
         <SectionContact />
         <Footer />
+        <BottomNav />
       </ContextComp>
-      <BottomNav />
     </main>
 
   )
