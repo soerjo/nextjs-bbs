@@ -1,0 +1,146 @@
+{
+    "id": {
+        "section_home": {
+            "title": "BUANA BAHARI SAMUDRA",
+            "description": "Buana Bahari Samudera (BBS) menyediakan layanan pengangkutan barang dengan kualitas terbaik, yang tidak hanya menjamin pengiriman yang cepat dan dapat diandalkan tetapi juga mengutamakan keselamatan barang berharga Anda",
+            "button": "Selidiki Lebih"
+        },
+        "section_service": {
+            "title": "LAYANAN KAMI",
+            "description": "Tiga layanan kargo berkualitas tinggi kami yang dirancang dengan cermat untuk memenuhi kebutuhan pengiriman Anda, setiap satu dikembangkan dengan presisi yang tinggi untuk memberikan pengalaman pengiriman tak tertandingi yang disesuaikan dengan kepuasan Anda yang tertinggi.",
+            "child": [
+                {
+                    "title": "Penyewaan Waktu atau Muatan",
+                    "description": "Jelajahi armada tugboat dan tongkang serbaguna kami yang dirancang untuk memenuhi kebutuhan spesifik penyewaan waktu dan muatan Anda. Baik itu muatan besar atau transportasi khusus, kami siap membantu Anda."
+                },
+                {
+                    "title": "Manajemen Operasional",
+                    "description": "Maksimalkan operasi maritim Anda dengan Layanan Manajemen Tongkang unggulan kami. Tim berpengalaman kami menjamin operasi, pemeliharaan, dan logistik yang lancar untuk armada Anda. Fokuskan pada bisnis inti Anda sementara kami menangani sisanya. Jelajahi layanan kami sekarang."
+                },
+                {
+                    "title": "Agen Pembelian dan Penjualan",
+                    "description": "Masuki dunia keahlian khusus dengan Layanan Agen Pembelian dan Penjualan kami untuk Layanan Tongkang, di mana kami menyajikan beragam pilihan kapal yang dirancang secara cermat, masing-masing disesuaikan untuk memenuhi kebutuhan unik Anda, memastikan pengalaman transaksi yang lancar dan efisien."
+                }
+            ]
+        },
+        "section_goals": {
+            "title": "TUJUAN PERUSAHAAN",
+            "description": "",
+            "child": [
+                {
+                    "title": "Integritas",
+                    "description": "Komitmen teguh terhadap kejujuran, kebenaran, dan prinsip moral, bahkan saat tak ada orang yang memperhatikan."
+                },
+                {
+                    "title": "Terpadu",
+                    "description": "Komitmen teguh terhadap kejujuran, kebenaran, dan prinsip moral, bahkan saat tak ada orang yang memperhatikan."
+                },
+                {
+                    "title": "Kerja Sama",
+                    "description": "Bekerja bersama menuju tujuan bersama, memanfaatkan keahlian dan kekuatan beragam mereka untuk meraih kesuksesan."
+                }
+            ]
+        },
+        "section_value": {
+            "title": "NILAI PERUSAHAAN",
+            "description": "",
+            "child": [
+                {
+                    "title": "Visi",
+                    "description": "Salah satu perusahaan pengiriman operasional di Indonesia dengan pengalaman dan keahlian dalam penanganan kargo."
+                },
+                {
+                    "title": "Misi",
+                    "description": "Mengembangkan jaringan pengiriman tongkang, LTC, dan kapal khusus dengan kepercayaan dan kebanggaan."
+                }
+            ]
+        },
+        "section_structure": {
+            "title": "STRUKTUR PERUSAHAAN",
+            "description": "Buana Bahari Samudra (BBS) didirikan pada Januari 2023 dan diharapkan menjadi salah satu perusahaan Pengiriman Operasional Terbaik di Indonesia."
+        },
+        "section_contact": {
+            "title": "HUBUNGI KAMI",
+            "description": "",
+            "fullname": "Nama Lengkap",
+            "email": "Email",
+            "message": "Pesan"
+        },
+        "section_footer": {
+            "title": "Buana Bahari Samudra",
+            "description": "Buana Bahari Samudera (BBS) didirikan pada Januari 2023 dan diharapkan menjadi salah satu perusahaan Pengapalan Operasional Terbaik di Indonesia."
+        }
+    },
+    "en": {
+        "section_home": {
+            "title": "BUANA BAHARI SAMUDRA",
+            "description": "Buana Bahari Samudera takes great pride in providing an unparalleled cargo service that not only ensures swift and reliable delivery but also prioritizes the safety of your valuable goods.",
+            "button": "Explore More"
+        },
+        "section_service": {
+            "title": "OUR SERVICES",
+            "description": "Introducing our three high-quality cargo services meticulously designed to cater to your shipping needs, each developed with dedicated precision to deliver an unparalleled shipping experience tailored to your utmost satisfaction.",
+            "child": [
+                {
+                    "title": "Time or Freight Charter",
+                    "description": "Explore our versatile fleet of tugboats and barges designed to meet your specific time and freight charter needs. Whether it's bulk cargo or specialized transport, we've got you covered."
+                },
+                {
+                    "title": "Management Operation",
+                    "description": "Optimize your maritime operations with our top-notch Tongkang Management Services. Our experienced team ensures smooth operations, maintenance, and logistics for your fleet. Focus on your core business while we handle the rest. Explore our services now."
+                },
+                {
+                    "title": "Buy and Sale Agency",
+                    "description": "Step into a world of specialized expertise with our Buy and Sale Agency for Barge Services, where we present an extensive selection of meticulously curated vessels, each tailored to meet your unique requirements, ensuring a seamless and efficient transaction experience"
+                }
+            ]
+        },
+        "section_goals": {
+            "title": "COMPANY GOALS",
+            "description": "",
+            "child": [
+                {
+                    "title": "Intergrity",
+                    "description": "The unwavering commitment to honesty, truthfulness, and moral principles, even when no one is watching."
+                },
+                {
+                    "title": "Integrated",
+                    "description": "Through our integrated approach, synergize every aspect of our business to ensure optimal efficiency."
+                },
+                {
+                    "title": "Team Work",
+                    "description": "Working together towards a common goal, leveraging their diverse skills and strengths to achieve success."
+                }
+            ]
+        },
+        "section_value": {
+            "title": "COMPANY VALUE",
+            "description": "",
+            "child": [
+                {
+                    "title": "Vision",
+                    "description": "One of the Operating Shipment companies in Indonesia with experience and expertise in handling cargo."
+                },
+                {
+                    "title": "Mission",
+                    "description": "Development networking barge shipment, LTC and Vessel specialist with trust and pride."
+                }
+            ]
+        },
+        "section_structure": {
+            "title": "COMPANY STRUCTURE",
+            "description": "Buana Bahari Samudra (BBS) was established in January 2023 and is envisioned to be one of the Best Operating Shipment comapnies in Indonesia."
+        },
+        "section_contact": {
+            "title": "CONTACT US",
+            "description": "",
+            "fullname": "Full Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "section_footer": {
+            "title": "Buana Bahari Samudra",
+            "description": "Buana Bahari Samudera (BBS) was established in January 2023 and is envisioned to be one of the Best Operating Shipment comapnies in Indonesia."
+        }
+    }
+}

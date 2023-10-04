@@ -2,7 +2,10 @@
 
 import SectionComp from "@/components/atoms/SectionComp";
 import React from "react";
-// import SectionComp from "../SectionComp";
+
+import translate from "@/constant/translate.constant.json";
+import { AllContext } from "@/components/atoms/ContextComp";
+
 
 const initialStateForm = {
     name: "",
@@ -11,6 +14,8 @@ const initialStateForm = {
 }
 
 const SectionContact = () => {
+    const { setallContext, allContext } = React.useContext(AllContext);
+
     const [formValue, setformValue] = React.useState(initialStateForm)
     const [loading, setloading] = React.useState(false)
 
@@ -33,9 +38,10 @@ const SectionContact = () => {
 
             <div className="relative w-full h-full flex justify-center items-center flex-col py-8 gap-8 container p-8 mx-auto">
                 <div className="max-w-[653px] mx-auto flex flex-col justify-center items-center pt-14 md:pt-12">
-                    <h2>
-                        {`Please Contact Us`}
-                    </h2>
+                    <h2>{
+                        translate[`${allContext.lang as "id" | "en"}`].section_contact
+                            .title
+                    }</h2>
                     {/* <p className="font-normal text-center py-4 text-white">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex sequi
                         ab odit iusto corporis ea sint quam. Fugit vitae quaerat inventore
@@ -48,9 +54,10 @@ const SectionContact = () => {
                             <label
                                 className="text-white block uppercase tracking-wide  text-xs font-bold mb-2"
                                 htmlFor="name"
-                            >
-                                Full Name
-                            </label>
+                            >{
+                                    translate[`${allContext.lang as "id" | "en"}`].section_contact
+                                        .fullname
+                                }</label>
                             <input
                                 className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                 id="name"
@@ -67,9 +74,10 @@ const SectionContact = () => {
                                 className="text-white block uppercase tracking-wide  text-xs font-bold mb-2"
                                 htmlFor="email"
 
-                            >
-                                Email
-                            </label>
+                            >{
+                                    translate[`${allContext.lang as "id" | "en"}`].section_contact
+                                        .email
+                                }</label>
                             <input
                                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="email"
@@ -86,9 +94,10 @@ const SectionContact = () => {
                             <label
                                 className="text-white block uppercase tracking-wide text-xs font-bold mb-2"
                                 htmlFor="message"
-                            >
-                                Message
-                            </label>
+                            >{
+                                    translate[`${allContext.lang as "id" | "en"}`].section_contact
+                                        .message
+                                }</label>
                             <textarea
                                 rows={4}
                                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

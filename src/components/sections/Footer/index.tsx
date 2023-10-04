@@ -1,35 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client'
+
 import React from "react";
+import Link from "next/link";
+
+import translate from "@/constant/translate.constant.json";
+import { AllContext } from "@/components/atoms/ContextComp";
 
 const listmedsos = ["facebook", "twitter", "linkedin", "youtube", "instagram"];
 
 const listservices = [
-    // {
-    //     title: "Products",
-    //     list: [
-    //         {
-    //             title: "230 ft",
-    //             link: "#",
-    //         },
-    //         {
-    //             title: "250 ft",
-    //             link: "#",
-    //         },
-    //         {
-    //             title: "280 ft",
-    //             link: "#",
-    //         },
-    //         {
-    //             title: "300 ft",
-    //             link: "#",
-    //         },
-    //         {
-    //             title: "330 ft",
-    //             link: "#",
-    //         },
-    //     ],
-    // },
     {
         title: "Services",
         list: [
@@ -79,15 +58,19 @@ const listservices = [
 ];
 
 const Footer = () => {
+    const { setallContext, allContext } = React.useContext(AllContext);
     return (
         <footer id="about" className="bg-[#363c77] ">
             <div className="flex flex-col md:flex-row justify-between container p-8 mx-auto gap-8">
                 <div className="flex flex-col justify-center items-start gap-4 w-full md:max-w-sm">
-                    <h3 className="text-2xl font-bold text-left">Buana Bahari Samudera</h3>
-                    <p className="text-left font-light text-base">
-                        Buana Bahari Samudera (BBS) was established in January 2023 and is envisioned to be
-                        one of the Best Operating Shipment comapnies in Indonesia.
-                    </p>
+                    <h3 className="text-2xl font-bold text-left">{
+                        translate[`${allContext.lang as "id" | "en"}`].section_footer
+                            .title
+                    }</h3>
+                    <p className="text-left font-light text-base">{
+                        translate[`${allContext.lang as "id" | "en"}`].section_footer
+                            .description
+                    }</p>
                     {/* <div className="flex justify-center items-center gap-2">
                         {listmedsos.map((list, index) => {
                             return (

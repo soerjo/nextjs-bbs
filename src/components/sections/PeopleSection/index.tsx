@@ -1,6 +1,8 @@
+'use client'
+
+import React from "react";
 import BbsIcon from "@/components/assets/BbsIcon";
 import SectionComp from "@/components/atoms/SectionComp";
-import React from "react";
 import Background from "./Background";
 import ServiceComponent from "./ServiceComponent";
 import People01 from "@/components/assets/People01";
@@ -9,7 +11,11 @@ import People03 from "@/components/assets/People03";
 import Image from "next/image";
 import PublicComponent from "./PublicComponent";
 
+import translate from "@/constant/translate.constant.json";
+import { AllContext } from "@/components/atoms/ContextComp";
+
 const PeopleSection = () => {
+    const { setallContext, allContext } = React.useContext(AllContext);
     return (
         <>
             <SectionComp id="people" classname="-z-10">
@@ -18,23 +24,42 @@ const PeopleSection = () => {
                 <div className="flex flex-col  max-w-6xl container mx-auto h-full gap-12 px-8 py-0 md:py-24 ">
                     <div>
                         <div className="h-[3px] w-1/6 bg-white mx-auto mb-8" />
-                        <h2>COMPANY VALUE</h2>
+                        <h2>{
+                            translate[`${allContext.lang as "id" | "en"}`].section_value
+                                .title
+                        }</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <ServiceComponent
                             Icon={<People01 />}
-                            title="Integrity"
-                            content="The unwavering commitment to honesty, truthfulness, and moral principles, even when no one is watching."
+                            title={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[0].title
+                            }
+                            content={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[0].description
+                            }
                         />
                         <ServiceComponent
-                            Icon={<People02 />}
-                            title="Integrated"
-                            content="Through our integrated approach, synergize every aspect of our business to ensure optimal efficiency."
+                            Icon={<People02 />} title={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[1].title
+                            }
+                            content={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[1].description
+                            }
                         />
                         <ServiceComponent
-                            Icon={<People03 />}
-                            title="Team Work"
-                            content="Working together towards a common goal, leveraging their diverse skills and strengths to achieve success."
+                            Icon={<People03 />} title={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[2].title
+                            }
+                            content={
+                                translate[`${allContext.lang as "id" | "en"}`].section_goals
+                                    .child[2].description
+                            }
                         />
                     </div>
                     <div className="w-ful">
@@ -58,21 +83,34 @@ const PeopleSection = () => {
                 <div className="relative flex flex-row w-full max-w-6xl container mx-auto h-full gap-12 px-8 py-0 md:py-24 ">
                     <div className="">
                         <div className="flex flex-col justify-center items-start">
-                            <h2 className="text-left">COMPANY GOALS</h2>
+                            <h2 className="text-left">{
+                                translate[`${allContext.lang as "id" | "en"}`].section_value
+                                    .title
+                            }</h2>
                             <div className="h-[5px] w-[100px] bg-white mb-8" />
                         </div>
 
                         <div className="flex flex-col gap-8">
                             <PublicComponent
                                 Icon={<People01 />}
-                                title="Integrity"
-                                content="The unwavering commitment to honesty, truthfulness, and moral principles, even when no one is watching."
-                            />
+                                title={
+                                    translate[`${allContext.lang as "id" | "en"}`].section_value
+                                        .child[0].title
+                                }
+                                content={
+                                    translate[`${allContext.lang as "id" | "en"}`].section_value
+                                        .child[0].description
+                                } />
                             <PublicComponent
                                 Icon={<People03 />}
-                                title="Team Work"
-                                content="Working together towards a common goal, leveraging their diverse skills and strengths to achieve success."
-                            />
+                                title={
+                                    translate[`${allContext.lang as "id" | "en"}`].section_value
+                                        .child[1].title
+                                }
+                                content={
+                                    translate[`${allContext.lang as "id" | "en"}`].section_value
+                                        .child[1].description
+                                } />
                         </div>
 
                         <div className="w-full mt-20">
@@ -99,12 +137,12 @@ const PeopleSection = () => {
 
                 <div className="flex flex-row  max-w-6xl container mx-auto h-full gap-12 px-8 py-0 md:py-24 ">
                     <div className="mx-auto w-full">
-                        <h2 className="mb-12">COMPANY STRUCTURE</h2>
-                        <p className="text-base md:text-lg mb-4 max-w-3xl mx-auto">
-                            Buana Bahari Samudra (BBS) was established in January 2023 and
-                            is envisioned to be one of the Best Operating Shipment comapnies
-                            in Indonesia.
-                        </p>
+                        <h2 className="mb-12">{
+                            translate[`${allContext.lang as "id" | "en"}`].section_structure.title
+                        }</h2>
+                        <p className="text-base md:text-lg mb-4 max-w-3xl mx-auto">{
+                            translate[`${allContext.lang as "id" | "en"}`].section_structure.description
+                        }</p>
                         <div className="h-[3px] w-1/6 bg-white mx-auto mb-8" />
 
 

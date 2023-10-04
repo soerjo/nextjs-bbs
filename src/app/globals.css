@@ -11,6 +11,10 @@
     @apply scroll-smooth;
   }
 
+  input:checked ~ .dot {
+    @apply translate-x-[100%];
+  }
+
   h1 {
     @apply text-4xl md:text-7xl font-extrabold text-white text-center mb-2 md:mb-4;
   }

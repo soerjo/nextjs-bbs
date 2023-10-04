@@ -10,7 +10,9 @@ export interface IAllContext {
 export const AllContext = React.createContext<IAllContext>({} as IAllContext)
 
 const ContextComp = ({ children }: { children: React.ReactNode }) => {
-    const [allContext, setallContext] = React.useState()
+    const [allContext, setallContext] = React.useState<Record<string, any>>({
+        lang: "id"
+    })
 
     return (
         <AllContext.Provider value={{ allContext, setallContext }} >
